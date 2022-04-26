@@ -178,7 +178,7 @@ const Formulario = () => {
             <tbody>
               {lista.map((item) => (
                 <tr key={item.id}>
-                  <td><img src={"https://picsum.photos/200/300"} alt="logo"/></td>
+                  <td><img src={`https://picsum.photos/200/300?random=${item.id}`} alt="logo"/></td>
                   <td>{item.numero}</td>
                   <td>{item.saldo}</td>
                   <td>{item.cuotaManejo}</td>
