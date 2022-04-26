@@ -165,6 +165,7 @@ const Formulario = () => {
           <table className="table table bordered text-center">
             <thead>
               <tr>
+                <th>Imagen</th>
                 <th>Número</th>
                 <th>Saldo</th>
                 <th>Cuota de manejo</th>
@@ -177,6 +178,7 @@ const Formulario = () => {
             <tbody>
               {lista.map((item) => (
                 <tr key={item.id}>
+                  <td><img src={"https://picsum.photos/200/300"} alt="logo"/></td>
                   <td>{item.numero}</td>
                   <td>{item.saldo}</td>
                   <td>{item.cuotaManejo}</td>
